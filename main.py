@@ -285,10 +285,14 @@ async def on_startup() -> None:
 
     if WEBHOOK_URL:
         url = f"{WEBHOOK_URL}/telegram/{WEBHOOK_SECRET}"
-        log.info("Setting webhook: %s", url)
-        await ptb_app.bot.set_webhook(url)
+        try:
+            await ptb_app.bot.set_webhook(url)
+            log.info("Webhook set: %s", url)
+        except Exception as e:
+            log.error("Failed to set webhook (will retry later): %s", e)
 
     log.info("BOT STARTED")
+
 
 
 @app.on_event("shutdown")
