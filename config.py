@@ -5,10 +5,10 @@ from typing import Iterable
 # ====== 1) ШАБЛОНЫ (Google Sheets) ======
 # ВАЖНО: spreadsheet_id — это ID из ссылки Google Sheets (между /d/ и /edit)
 
-RC_TEMPLATE_SPREADSHEET_ID = "1aqYtU1zDXLV-nXlGiCmr1lCyC8M_xoNK"
+RC_TEMPLATE_SPREADSHEET_ID = "1d6FO0tJQnRvSrnP41dCCCrdNQOYFSzXdyXDPI6RE53U"
 RC_TEMPLATE_SHEET_NAME = "общий"
 
-FREEZE_TEMPLATE_SPREADSHEET_ID = "18eF0sI-haYOv1gLgppzSd5H9V7Bcdqcy"
+FREEZE_TEMPLATE_SPREADSHEET_ID = "1tGpxU5MJZ8MOTK-uaIswtMYkEuXw1pTxXqCVwrvEhSM"
 FREEZE_TEMPLATE_SHEET_NAME = "Сводный"
 
 
